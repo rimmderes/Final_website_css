@@ -1,0 +1,332 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(Header.png);
+    background-color: cover;
+    background-position: center;
+}
+
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 120px;
+    cursor: pointer;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: violet;
+    text-transform: uppercase;
+    text-shadow: 
+          0 0 5px hotpink,
+          0 0 10px hotpink,
+          0 0 20px hotpink,
+          0 0 40px hotpink,
+          0 0 80px hotpink,
+          0 0 90px hotpink,
+          0 0 100px hotpink,
+          0 0 150px hotpink;
+}
+
+.navbar ul li ::after {
+    content :'';
+    height: 3px;
+    width: 0%;
+    background: purple;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li :hover::after {
+    width: 100%;
+    
+}
+
+.content {
+    width : 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: aliceblue;
+    font-size: 55px;
+    text-shadow: 
+          0 0 5px hotpink,
+          0 0 10px hotpink,
+          0 0 20px hotpink,
+          0 0 40px hotpink,
+          0 0 80px hotpink,
+          0 0 90px hotpink,
+          0 0 100px hotpink,
+          0 0 150px hotpink;
+    /* font-family: ; */
+}
+
+.socials {
+    width: 100%;
+    position: absolute;
+    transform: translateY(900%);
+    text-align: center;
+    display: inline-flexbox;
+}
+
+.products {
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+/* .button { */
+    /* width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px; */
+    /* border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid purple;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden; */
+
+/* } */
+
+button {
+    background: rgb(224, 41, 133);
+    /* height: 100%;
+    width: 100%; */
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid purple;
+    /* background: transparent; */
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    /* position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1; */
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    margin-top: auto;
+
+}
+
+button:hover{
+    font-size: 1.2em;
+
+}
+
+.body {
+    margin: 0;
+    font-family: sans-serif;
+    background: plum;
+}
+
+h2 {
+    text-align: center;
+    font-size: 60px;
+    margin: 0;
+    padding-top: 10px;
+    color: rgb(121, 105, 121);
+    /* transform: translateY(50px); */
+    text-shadow: 
+          0 0 5px purple,
+          0 0 10px purple,
+          0 0 20px purple,
+          0 0 40px purple,
+          0 0 80px purple,
+          0 0 90px purple,
+          0 0 100px purple,
+          0 0 150px purple;
+
+}
+
+.products {
+    display: flex;
+    flex-wrap: 10px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 0;
+    gap: 10px
+}
+
+.products_card {
+    width: 20%;
+    margin: 15px;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    padding-top: 10px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    transition: .4s;
+    background: palevioletred;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 530px;
+}
+
+.products_card:hover {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.22);
+    transform: translate(0px, -8px);
+}
+
+.trending_card {
+    width: 20%;
+    margin: 15px;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    padding-top: 10px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    transition: .4s;
+    background: palevioletred;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 530px;
+}
+
+.trending_card_container {
+    display: flex;
+    flex-wrap: 10px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 0;
+    gap: 10px
+
+}
+
+.img {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+
+p {
+    text-align: center;
+    color: aliceblue;
+    padding-top: 0 8px;
+}
+
+.h3 {
+    font-size: 26px;
+    text-align: center;
+    color: blueviolet;
+    margin: 0;
+}
+
+.blog {
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    transform: translateY(50px);
+    border-block: pink;
+    background-image: url("https://media.tenor.com/JcFQI9pU2ZUAAAAC/zodiac-shooting-star.gif");
+    padding: 10%;
+    
+}
+
+.padded_content {
+    padding: 2rem 10%;
+}
+
+h1 { font-family: "Leckerli One";  font-style: normal; font-variant: normal; font-weight: 700; } h3 { font-family: "Leckerli One"; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; } p { font-family: "Leckerli One"; font-style: normal; font-variant: normal; font-weight: 400; } blockquote { font-family: "Leckerli One"; font-style: normal; font-variant: normal; font-weight: 400;} pre { font-family: "Leckerli One"; font-style: normal; font-variant: normal; font-weight: 400}
+h2 { font-family: "Leckerli One";  font-style: normal; font-variant: normal; font-weight: 700; } h3 { font-family: "Leckerli One"; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; } p { font-family: "Leckerli One"; font-style: normal; font-variant: normal; font-weight: 400; } blockquote { font-family: "Leckerli One"; font-style: normal; font-variant: normal; font-weight: 400;} pre { font-family: "Leckerli One"; font-style: normal; font-variant: normal; font-weight: 400}
+
+
+
+
+    /* contact */
+
+    .contact {
+        background-color: rgb(187,222,234);
+        display: flex;
+    }
+    
+    .contact__form {
+        display: flex;
+        align-items: center;
+    }
+    
+    .contact__text {
+        width: 50%;
+    }
+    
+    .contact__form > form {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .contact input {
+        margin: 10px;
+    }
+
+    /* vegan */
+
+.vegan_container {
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    transform: translateY(50px);
+    border-block: pink;
+    /* background-image: url("https://media.tenor.com/BlGTpp-9JgUAAAAM/vegan-vegetable.gif"); */
+}
+
+/* ==FOOTER========== */
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer nav,
+.footer div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer__right {
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end; }
